@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Chess Knight</title>
+  <link rel="stylesheet" href="https://unpkg.com/tachyons@4.10.0/css/tachyons.min.css">
+  <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
+  <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
+  <style>
+    .board {
+      display: grid;
+      grid-gap: 0;
+      grid-template-columns: repeat(8, auto);
+      grid-template-rows: repeat(8, auto);
+    }
+
+    .board .white-knight {
+      background-image: url("https://upload.wikimedia.org/wikipedia/commons/7/70/Chess_nlt45.svg");
+      background-repeat: no-repeat;
+      background-position: 50% 50%;
+      background-size: contain;
+    }
+
+    .board .black-king {
+      background-image: url("https://upload.wikimedia.org/wikipedia/commons/f/f0/Chess_kdt45.svg");
+      background-repeat: no-repeat;
+      background-position: 50% 50%;
+      background-size: contain;
+    }
+
+    .bg-dark-tile {
+      background-color: #b58863;
+    }
+
+    .bg-light-tile {
+      background-color: #f0d9b5;
+    }
+  </style>
+</head>
+<body>
+  <div id="js-app"></div>
+  <script src="game.js"></script>
+</body>
+</html>
