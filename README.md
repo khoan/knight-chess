@@ -1,24 +1,20 @@
-# README
+# Knight Chess
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Move white knight until black king is vanquished!
 
-Things you may want to cover:
+## demo
 
-* Ruby version
+visit [demo](https://tranquil-cove-85436.herokuapp.com)
 
-* System dependencies
+![Demo in action](https://raw.githubusercontent.com/khoan/knight-chess/master/demo.png)
 
-* Configuration
+## development
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+```
+$ git@github.com:khoan/knight-chess.git
+$ cd knight-chess
+$ bundle
+$ rails s
+$ open localhost:3000
+$ curl 'localhost:3000/hints.json?currentPos=1&targetPos=10'
+```
